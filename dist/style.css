@@ -286,4 +286,44 @@ body {
 .header .menu__item-link:hover::before {
   width: 100%;
   left: 0;
+}
+
+main .banner {
+  width: 100%;
+  max-height: 1089px;
+  position: relative;
+}
+main .banner__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+main .banner__bg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .banner__content {
+  font-family: "Orelega One", cursive;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 140px;
+  padding-bottom: 32px;
+}
+main .banner__content-title {
+  max-width: clamp(22.125rem, 19.663rem + 12.31vw, 34.438rem);
+  margin: 0 auto;
+  padding-bottom: 17px;
+  font-size: clamp(1.875rem, 1.387rem + 2.44vw, 4.313rem);
+  line-height: clamp(2.5rem, 2.063rem + 2.19vw, 4.688rem);
+  color: #8cc63f;
+}
+main .banner__content-subtitle {
+  padding-top: 10px;
+  font-size: clamp(1.125rem, 0.75rem + 1.88vw, 3rem);
+  color: #2f4f3c;
 }/*# sourceMappingURL=style.css.map */
