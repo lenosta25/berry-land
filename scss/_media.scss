@@ -1,0 +1,117 @@
+@media (max-width: 664px) {
+  body {
+    .header {
+      max-height: 100px;
+      &__logo {
+        top: 10px;
+        padding: 0 28px 0 28px;
+      }
+      .menu {
+        &__burger {
+          display: block;
+          position: relative;
+          z-index: 5;
+          height: 25px;
+          width: 42px;
+          cursor: pointer;
+          span {
+            position: absolute;
+            top: calc(50% - 1px);
+            left: 0;
+            width: 33px;
+            height: 3px;
+            border-radius: 50px;
+            background: #2f4f3c;
+            transition: all 0.3s ease 0s;
+            &:first-child {
+              top: 0;
+            }
+            &:last-child {
+              top: auto;
+              bottom: 0;
+            }
+          }
+          &._active {
+            span {
+              transform: scale(0);
+              &:first-child {
+                transform: rotate(-45deg);
+                top: calc(50% - 1px);
+              }
+              &:last-child {
+                transform: rotate(45deg);
+                bottom: calc(50% - 1px);
+              }
+            }
+          }
+        }
+        &__cart {
+          display: block;
+          position: absolute;
+          z-index: 5;
+          top: 42%;
+          right: 25px;
+          span {
+            position: absolute;
+            top: -12px;
+            right: -17px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: clamp(0.813rem, 0.648rem + 0.85vw, 1rem);
+            line-height: 30px;
+            text-align: center;
+            color: #8cc63f;
+            background: #2f4f3c;
+          }
+        }
+        &__body {
+          position: absolute;
+          z-index: 4;
+          top: -445px;
+          left: 0;
+          height: 445px;
+          width: 100%;
+          border-radius: 0 0 24px 24px;
+          background: #8cc63f;
+          transition: all 0.7s;
+          overflow: auto;
+          &._lock {
+            overflow: hidden;
+          }
+          &._active {
+            top: 0;
+          }
+        }
+        &__list {
+          flex-direction: column;
+          align-items: none;
+          margin: auto;
+          padding-top: 104px;
+          li {
+            line-height: 36px;
+          }
+          li + li {
+            padding-left: 0;
+            padding-top: 36px;
+          }
+          li:nth-child(3) {
+            padding-left: 0;
+          }
+        }
+        &__item {
+          font-size: 24px;
+          line-height: 32.74px;
+          &-link {
+            padding: 0;
+          }
+          .item-txt {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
