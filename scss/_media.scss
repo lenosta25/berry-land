@@ -1,3 +1,16 @@
+@media (max-width: 343px) {
+  body{
+    main {
+      .shop-tabs {
+        &__item {
+          font-weight: 400;
+          font-size: clamp(1rem, -0.739rem + 8.7vw, 1.125rem);
+        }
+      }
+    }
+  }
+  
+}
 @media (max-width: 664px) {
   body {
     .header {
@@ -54,7 +67,7 @@
           span {
             position: absolute;
             top: -12px;
-            right: -17px;
+            right: -10px;
             width: 30px;
             height: 30px;
             border-radius: 50%;

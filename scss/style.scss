@@ -1,6 +1,7 @@
 @import "_reset.scss";
 @import "_media.scss";
 $main-color: #8cc63f;
+$main-color-opacity: rgba(140, 198, 63, 0.5);
 $green-txt-color: #2f4f3c;
 
 $max-width: 1920px;
@@ -9,12 +10,22 @@ $max-width-container: 1638px;
 // font-family: 'Orelega One', cursive;
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
 }
 [class*="__container"] {
   max-width: 1638px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+h4 {
+  font-family: "Orelega One", cursive;
+  font-size: clamp(1.25rem, 1.175rem + 0.38vw, 1.625rem);
+  line-height: clamp(1.375rem, 1.3rem + 0.38vw, 1.75rem);
+  text-align: center;
+  color: $green-txt-color;
+  margin-bottom: 20px;
 }
 .header {
   position: relative;
@@ -72,6 +83,7 @@ body {
           bottom: -7px;
           width: 0%;
           height: 2px;
+          border-radius: 2px;
           background: #ffffff;
           transition: 0.2s;
         }
@@ -109,7 +121,7 @@ main {
       font-weight: 400;
       text-align: center;
       padding-top: 140px;
-      padding-bottom: 32px;
+      padding-bottom: 60px;
       &-title {
         max-width: clamp(22.125rem, 19.663rem + 12.31vw, 34.438rem);
         margin: 0 auto;
@@ -122,6 +134,129 @@ main {
         padding-top: 10px;
         font-size: clamp(1.125rem, 0.75rem + 1.88vw, 3rem);
         color: $green-txt-color;
+      }
+    }
+  }
+  .shop {
+    &-tabs {
+      max-width: clamp(20rem, 19.625rem + 1.88vw, 21.875rem);
+      margin: 0 auto;
+      &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(1.5rem, 1.25rem + 1.25vw, 2.75rem);
+        border-bottom: 1px solid $main-color-opacity;
+      }
+      &__item {
+        position: relative;
+        font-weight: 600;
+        color: $green-txt-color;
+        padding-bottom: 12px;
+        cursor: pointer;
+      }
+      &__item._active {
+        border-bottom: 3px solid $main-color;
+      }
+    }
+  }
+  .shop__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(2rem, 1.5rem + 2.5vw, 4.5rem);
+    gap: 32px;
+    .shop__cards {
+      max-width: 1280px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: clamp(1.25rem, 1.1rem + 0.75vw, 2rem);
+      .card {
+        max-width: 296px;
+        min-height: 439px;
+        border-radius: 24px;
+        padding: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+        box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
+        // &__img-product {
+        // }
+        &__price {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          font-size: 18px;
+          line-height: 25px;
+          margin-top: 21px;
+          &-currency {
+            font-weight: 700;
+            color: $green-txt-color;
+          }
+          &-weight {
+            font-weight: 400;
+          }
+        }
+        &__details {
+          max-width: 248px;
+          height: 49px;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+          margin-top: 18px;
+          .counter {
+            width: 100%;
+            border: 1px solid $green-txt-color;
+            border-radius: 16px;
+            display: flex;
+            justify-content: space-between;
+            padding: 11px;
+            &__control {
+              font-weight: 900;
+              color: #343434;
+            }
+            &__quatity {
+              font-weight: 400;
+              font-size: 18px;
+            }
+          }
+          &-btn {
+            width: 100%;
+            border-radius: 16px;
+            background: $green-txt-color;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 11px;
+          }
+        }
+      }
+    }
+    .basket {
+      width: 294px;
+      border: 2px solid $green-txt-color;
+      border-radius: 24px;
+      padding: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+      box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
+      &__body {
+      }
+      &__empty {
+        text-align: center;
+      }
+      &__wrapper {
+      }
+      &-item {
+        &__top {
+          display: flex;
+          justify-content: space-between;
+          gap: 12px;
+          align-items: center;
+        }
+
+        &__title {
+          color: $green-txt-color;
+          line-height: 23px;
+          font-weight: 700;
+          font-size: 16px;
+        }
       }
     }
   }
