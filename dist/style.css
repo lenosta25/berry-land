@@ -411,16 +411,24 @@ main .shop__main .shop__cards .card__details {
   margin-top: 18px;
 }
 main .shop__main .shop__cards .card__details .counter {
+  align-items: center;
   width: 100%;
+  height: 100%;
   border: 1px solid #2f4f3c;
   border-radius: 16px;
   display: flex;
   justify-content: space-between;
-  padding: 11px;
 }
 main .shop__main .shop__cards .card__details .counter__control {
+  padding: 0 15px;
   font-weight: 900;
+  font-size: 22px;
   color: #343434;
+  cursor: pointer;
+  transition: 0.9s;
+}
+main .shop__main .shop__cards .card__details .counter__control:hover {
+  color: #8cc63f;
 }
 main .shop__main .shop__cards .card__details .counter__quatity {
   font-weight: 400;
