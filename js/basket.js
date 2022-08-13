@@ -48,8 +48,8 @@ window.addEventListener("click", function (event) {
 
     // Отображение статуса корзины (пустая)
     toggleBasketStatus();
-    // Подсчет общей стоимости товаров к корзине
-    calcBasketPrice();
+    // Подсчет общей стоимости товаров к корзине и доставки
+    calcBasketPriceAndDelivery();
   }
   // Удаление товара при нажатии на trash
   if (event.target.hasAttribute("data-trash")){
@@ -57,7 +57,7 @@ window.addEventListener("click", function (event) {
     itemCard.remove();
     // Отображение статуса корзины (пустая)
     toggleBasketStatus();
-    calcBasketPrice();
+    calcBasketPriceAndDelivery();
   }
 });
 
