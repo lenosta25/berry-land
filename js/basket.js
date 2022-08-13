@@ -36,7 +36,7 @@ window.addEventListener("click", function (event) {
          <div class="basket-item__bottom">
             <span data-counter> ${productInfo.counter}</span>
             x
-            <span> ${productInfo.currency}</span>
+            <span data-currency> ${productInfo.currency}</span>
          </div>
       </div>
       `;
@@ -48,6 +48,8 @@ window.addEventListener("click", function (event) {
 
     // Отображение статуса корзины (пустая)
     toggleBasketStatus();
+    // Подсчет общей стоимости товаров к корзине
+    calcBasketPrice();
   }
   // Удаление товара при нажатии на trash
   if (event.target.hasAttribute("data-trash")){
@@ -55,6 +57,7 @@ window.addEventListener("click", function (event) {
     itemCard.remove();
     // Отображение статуса корзины (пустая)
     toggleBasketStatus();
+    calcBasketPrice();
   }
 });
 
