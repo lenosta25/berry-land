@@ -25,11 +25,10 @@ h3 {
   line-height: clamp(1.375rem, 1.3rem + 0.38vw, 1.75rem);
   text-align: center;
   color: $green-txt-color;
-  margin-bottom: 20px;
 }
 h4,
 .basket__empty,
-.caption{
+.caption {
   color: #2f4f3c;
   line-height: 25px;
   font-weight: 700;
@@ -42,6 +41,10 @@ h4,
   font-weight: 700;
   font-size: 18px;
   padding: 11px;
+  transition: 0.2s;
+  &:hover{
+    opacity: 0.9;
+  }
 }
 .none {
   display: none;
@@ -157,10 +160,13 @@ main {
     }
   }
   .shop {
+    position: relative;
     &-tabs {
+      z-index: 99;
       max-width: clamp(20rem, 19.625rem + 1.88vw, 21.875rem);
       margin: 0 auto;
       &__items {
+        z-index: 99;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -200,6 +206,9 @@ main {
         border-radius: 24px;
         padding: 24px;
         box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
+        &__titel {
+          min-height: 84px;
+        }
         &__img-product {
           object-fit: cover;
           width: 248px;
@@ -268,15 +277,31 @@ main {
       padding: 23px;
       margin-left: 32px;
       box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
-
+      &__title {
+        margin-bottom: 21px;
+      }
       &__body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-      &__wrapper{
-        max-height: 168px;
-        overflow:auto;
+      &__wrapper {
+        max-height: 152px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 5px;
+          height: 100%;
+          background-color: $green-txt-color;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $main-color;
+          height: 4px;
+          border-radius: 50px;
+        }
+        &::-webkit-scrollbar-track {
+          -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+          background-color: #f9f9fd;
+        }
       }
       &__empty {
         align-items: center;
@@ -286,7 +311,7 @@ main {
       &-item {
         &__top {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-start;
           gap: 12px;
           align-items: center;
         }
@@ -319,21 +344,19 @@ main {
       }
       &__total {
         .delivery-cost,
-          .sum,
-          .uan{
-            color: $main-color;
-            font-weight: 700;
-          }
+        .sum,
+        .uan {
+          color: $main-color;
+          font-weight: 700;
+        }
         &-delivery {
-        padding-top: 10px;
-        
-          .small{
+          padding-top: 10px;
+          .small {
             font-size: 14px;
             color: $green-txt-color;
-            
           }
         }
-        &-price{
+        &-price {
           padding-top: 5px;
         }
       }

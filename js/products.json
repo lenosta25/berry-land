@@ -1,0 +1,170 @@
+[
+   {
+      "id": 1,
+      "title": "Малина замороженная",
+      "imgSrc": "raspberry.png",
+      "price": 200,
+      "weight": 2 
+   },
+   {
+      "id": 2,
+      "title": "Голубика замороженная",
+      "imgSrc": "blueberry.png",
+      "price": 210,
+      "weight": 2
+   },
+   {
+      "id": 3,
+      "title": "Вишня замороженная",
+      "imgSrc": "cherry.png",
+      "price": 75,
+      "weight": 2
+   },
+   {
+      "id": 4,
+      "title": "Микс 5-ти ягод",
+      "imgSrc": "berry-mix.png",
+      "price": 45,
+      "weight": 1
+   },
+   {
+      "id": 5,
+      "title": "Ежевика замороженная",
+      "imgSrc": "blackberry.png",
+      "price": 190,
+      "weight": 1
+   },
+   {
+      "id": 6,
+      "title": "Черная смородина замороженная",
+      "imgSrc": "black-currant.png",
+      "price": 113,
+      "weight": 1
+   },
+   {
+      "id": 7,
+      "title": "Красная смородина замороженная",
+      "imgSrc": "red-currants.png",
+      "price": 54,
+      "weight": 1
+   },
+   {
+      "id": 8,
+      "title": "Черноплодная рябина замороженная",
+      "imgSrc": "chokeberry.png",
+      "price": 50,
+      "weight": 1
+   },
+   {
+      "id": 9,
+      "title": "Брусника замороженная (1 сорт)",
+      "imgSrc": "cowberry.png",
+      "price": 55,
+      "weight": 1
+   },
+   {
+      "id": 10,
+      "title": "Клюква замороженная",
+      "imgSrc": "cranberry.png",
+      "price": 99,
+      "weight": 1
+   },
+   {
+      "id": 11,
+      "title": "Крыжовник (агрус) замороженный ",
+      "imgSrc": "gooseberry.png",
+      "price": 35,
+      "weight": 1 
+   },
+   {
+      "id": 12,
+      "title": "Клубника замороженная",
+      "imgSrc": "strawberry.png",
+      "price": 94,
+      "weight": 1
+   },
+   {
+      "id": 13,
+      "title": "Финик сушеный",
+      "imgSrc": "finick.png",
+      "price": 216,
+      "weight": 1
+   },
+   {
+      "id": 14,
+      "title": "Абрикос (половинки) замороженные ",
+      "imgSrc": "apricot.png",
+      "price": 87,
+      "weight": 1 
+   },
+   {
+      "id": 15,
+      "title": "Банан (слайсами) замороженный",
+      "imgSrc": "banana.png",
+      "price": 200,
+      "weight": 1 
+   },
+   {
+      "id": 16,
+      "title": "Замороженные дольки манго",
+      "imgSrc": "mango.png",
+      "price": 400,
+      "weight": 1
+   },
+   {
+      "id": 17,
+      "title": "Ананас (кусочками) замороженный",
+      "imgSrc": "pineapple.png",
+      "price": 175,
+      "weight": 1
+   },
+   {
+      "id": 18,
+      "title": "Замороженное пюре личи",
+      "imgSrc": "lychee.png",
+      "price": 210,
+      "weight": 0.5
+   },
+   {
+      "id": 20,
+      "title": "Маракуйя замороженная (пюре)",
+      "imgSrc": "passion-fruits.png",
+      "price": 280,
+      "weight": 1
+   },
+   {
+      "id": 21,
+      "title": "Облепиха замороженная",
+      "imgSrc": "sea-​​​​buckthorn.png",
+      "price": 140,
+      "weight": 2.5
+   },
+   {
+      "id": 22,
+      "title": "Свекла замороженная (кубиками)",
+      "imgSrc": "beet.png",
+      "price": 75,
+      "weight": 1
+   },
+   {
+      "id": 23,
+      "title": "Спирулина замороженная",
+      "imgSrc": "spirulina.png",
+      "price": 345,
+      "weight": 0.5 
+   },
+   {
+      "id": 24,
+      "title": "Какао Органическое Замороженное",
+      "imgSrc": "cacao.png",
+      "price": 275,
+      "weight": 0.5
+   },
+   {
+      "id": 23,
+      "title": "Пробиотик на миндальном молоке",
+      "imgSrc": "probiotic_th.png",
+      "price": 250,
+      "weight": 0.5 
+   }
+]

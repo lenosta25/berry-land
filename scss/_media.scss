@@ -18,9 +18,11 @@
           .shop__cards {
             .card {
               width: 296px;
-              &__img-product{
-width: 200px;
-
+              &__img-product {
+                width: 200px;
+              }
+              &__titel{
+                min-height: 70px;
               }
             }
           }
@@ -28,7 +30,6 @@ width: 200px;
       }
     }
   }
-  
 }
 @media (max-width: 664px) {
   body {
@@ -77,28 +78,28 @@ width: 200px;
             }
           }
         }
-        &__cart {
-          display: block;
-          position: absolute;
-          z-index: 5;
-          top: 42%;
-          right: 25px;
-          span {
-            position: absolute;
-            top: -12px;
-            right: -10px;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            font-family: "Montserrat", sans-serif;
-            font-weight: 700;
-            font-size: clamp(0.813rem, 0.648rem + 0.85vw, 1rem);
-            line-height: 30px;
-            text-align: center;
-            color: #8cc63f;
-            background: #2f4f3c;
-          }
-        }
+        // &__cart {
+        //   display: block;
+        //   position: absolute;
+        //   z-index: 5;
+        //   top: 42%;
+        //   right: 25px;
+        //   span {
+        //     position: absolute;
+        //     top: -12px;
+        //     right: -10px;
+        //     width: 30px;
+        //     height: 30px;
+        //     border-radius: 50%;
+        //     font-family: "Montserrat", sans-serif;
+        //     font-weight: 700;
+        //     font-size: clamp(0.813rem, 0.648rem + 0.85vw, 1rem);
+        //     line-height: 30px;
+        //     text-align: center;
+        //     color: #8cc63f;
+        //     background: #2f4f3c;
+        //   }
+        // }
         &__body {
           position: absolute;
           z-index: 4;
