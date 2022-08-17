@@ -53,8 +53,9 @@ window.addEventListener("click", function (event) {
   }
   // Удаление товара при нажатии на trash
   if (event.target.hasAttribute("data-trash")){
-    const itemCard = document.querySelector('.basket-item');
-    itemCard.remove();
+    // Находим карточку в корзине с товаром, внутри которой был совершен клик
+    const basketItem = event.target.closest('.basket-item');
+    basketItem.remove();
     // Отображение статуса корзины (пустая)
     toggleBasketStatus();
     calcBasketPriceAndDelivery();

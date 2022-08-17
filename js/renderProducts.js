@@ -2,15 +2,13 @@ const productsConteiner= document.querySelector('#products-conteiner');
 getProducts()
 async function getProducts(){
    const response = await fetch('./js/products.json');
-   
    const productsArray =await response.json();
-   
    renderProducts(productsArray)
 }
 function renderProducts(productsArray){
    productsArray.forEach(function(item) {
       const productsHTML = `
-      <article class="shop__card card" data-item="berries" data-id="${item.id}">
+      <article class="shop__card card ${item.type}" data-id="${item.id}">
                 <h3 class="card__titel">
                   ${item.title}
                 </h3>

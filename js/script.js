@@ -10,13 +10,3 @@ if (burger && menu) {
 		body.classList.toggle('_lock');
 	})
 }
-// Tabs
-let tab = document.querySelectorAll('.shop-tabs__item');
-for (let i = 0; i < tab.length; i++) {
-	tab[i].addEventListener('click', function () {
-		for (let j = 0; j < tab.length; j++) {
-			tab[j].classList.remove('_active');
-		}
-		this.classList.add('_active');
-	})
-}

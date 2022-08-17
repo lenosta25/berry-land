@@ -1,6 +1,7 @@
 [
    {
       "id": 1,
+      "type": "berries",
       "title": "Малина замороженная",
       "imgSrc": "raspberry.png",
       "price": 200,
@@ -8,6 +9,7 @@
    },
    {
       "id": 2,
+      "type": "berries",
       "title": "Голубика замороженная",
       "imgSrc": "blueberry.png",
       "price": 210,
@@ -15,6 +17,7 @@
    },
    {
       "id": 3,
+      "type": "berries",
       "title": "Вишня замороженная",
       "imgSrc": "cherry.png",
       "price": 75,
@@ -22,6 +25,7 @@
    },
    {
       "id": 4,
+      "type": "berries",
       "title": "Микс 5-ти ягод",
       "imgSrc": "berry-mix.png",
       "price": 45,
@@ -29,6 +33,7 @@
    },
    {
       "id": 5,
+      "type": "berries",
       "title": "Ежевика замороженная",
       "imgSrc": "blackberry.png",
       "price": 190,
@@ -36,6 +41,7 @@
    },
    {
       "id": 6,
+      "type": "berries",
       "title": "Черная смородина замороженная",
       "imgSrc": "black-currant.png",
       "price": 113,
@@ -43,6 +49,7 @@
    },
    {
       "id": 7,
+      "type": "berries",
       "title": "Красная смородина замороженная",
       "imgSrc": "red-currants.png",
       "price": 54,
@@ -50,6 +57,7 @@
    },
    {
       "id": 8,
+      "type": "berries",
       "title": "Черноплодная рябина замороженная",
       "imgSrc": "chokeberry.png",
       "price": 50,
@@ -57,6 +65,7 @@
    },
    {
       "id": 9,
+      "type": "berries",
       "title": "Брусника замороженная (1 сорт)",
       "imgSrc": "cowberry.png",
       "price": 55,
@@ -64,6 +73,7 @@
    },
    {
       "id": 10,
+      "type": "berries",
       "title": "Клюква замороженная",
       "imgSrc": "cranberry.png",
       "price": 99,
@@ -71,6 +81,7 @@
    },
    {
       "id": 11,
+      "type": "berries",
       "title": "Крыжовник (агрус) замороженный ",
       "imgSrc": "gooseberry.png",
       "price": 35,
@@ -78,6 +89,7 @@
    },
    {
       "id": 12,
+      "type": "berries",
       "title": "Клубника замороженная",
       "imgSrc": "strawberry.png",
       "price": 94,
@@ -85,6 +97,7 @@
    },
    {
       "id": 13,
+      "type": "superfood",
       "title": "Финик сушеный",
       "imgSrc": "finick.png",
       "price": 216,
@@ -92,6 +105,7 @@
    },
    {
       "id": 14,
+      "type": "superfood",
       "title": "Абрикос (половинки) замороженные ",
       "imgSrc": "apricot.png",
       "price": 87,
@@ -99,6 +113,7 @@
    },
    {
       "id": 15,
+      "type": "berries",
       "title": "Банан (слайсами) замороженный",
       "imgSrc": "banana.png",
       "price": 200,
@@ -106,6 +121,7 @@
    },
    {
       "id": 16,
+      "type": "superfood",
       "title": "Замороженные дольки манго",
       "imgSrc": "mango.png",
       "price": 400,
@@ -113,6 +129,7 @@
    },
    {
       "id": 17,
+      "type": "berries",
       "title": "Ананас (кусочками) замороженный",
       "imgSrc": "pineapple.png",
       "price": 175,
@@ -120,6 +137,7 @@
    },
    {
       "id": 18,
+      "type": "berries",
       "title": "Замороженное пюре личи",
       "imgSrc": "lychee.png",
       "price": 210,
@@ -127,6 +145,7 @@
    },
    {
       "id": 20,
+      "type": "berries",
       "title": "Маракуйя замороженная (пюре)",
       "imgSrc": "passion-fruits.png",
       "price": 280,
@@ -134,6 +153,7 @@
    },
    {
       "id": 21,
+      "type": "berries",
       "title": "Облепиха замороженная",
       "imgSrc": "sea-​​​​buckthorn.png",
       "price": 140,
@@ -141,6 +161,7 @@
    },
    {
       "id": 22,
+      "type": "superfood",
       "title": "Свекла замороженная (кубиками)",
       "imgSrc": "beet.png",
       "price": 75,
@@ -148,6 +169,7 @@
    },
    {
       "id": 23,
+      "type": "superfood",
       "title": "Спирулина замороженная",
       "imgSrc": "spirulina.png",
       "price": 345,
@@ -155,6 +177,7 @@
    },
    {
       "id": 24,
+      "type": "superfood",
       "title": "Какао Органическое Замороженное",
       "imgSrc": "cacao.png",
       "price": 275,
@@ -162,6 +185,7 @@
    },
    {
       "id": 23,
+      "type": "superfood",
       "title": "Пробиотик на миндальном молоке",
       "imgSrc": "probiotic_th.png",
       "price": 250,

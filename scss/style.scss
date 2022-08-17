@@ -12,6 +12,10 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 [class*="__container"] {
   max-width: 1638px;
@@ -50,7 +54,9 @@ h4,
   display: none;
 }
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
   max-height: 114px;
 
   background: $main-color;
@@ -125,6 +131,7 @@ main {
     width: 100%;
     max-height: 1089px;
     position: relative;
+    top: 106px;
     &__bg {
       position: absolute;
       z-index: -1;
@@ -160,7 +167,9 @@ main {
     }
   }
   .shop {
+    min-height: 100vh;
     position: relative;
+    top: 106px;
     &-tabs {
       z-index: 2;
       max-width: clamp(20rem, 19.625rem + 1.88vw, 21.875rem);
@@ -194,6 +203,7 @@ main {
         flex: 0 1 90%;
         flex-wrap: wrap;
         gap: 32px;
+        
         .card {
           z-index: 2;
           display: flex;
@@ -267,8 +277,14 @@ main {
             }
           }
         }
+        .hide{
+          display: none;
+        }
       }
       .basket {
+        position: sticky;
+        top: 116px;
+        z-index: 2;
         flex: 0 1 10%;
         width: 294px;
         min-height: 150px;
@@ -276,6 +292,7 @@ main {
         border-radius: 24px;
         padding: 23px;
         margin-left: 32px;
+        background-color: #ffffff;
         box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
         &__title {
           margin-bottom: 21px;
@@ -419,8 +436,11 @@ main {
   }
 }
 .footer {
+  position:relative;
+  top: 106px;
   margin-top: 90px;
   background: $main-color;
+  box-shadow: 0px 4px 20px rgba(184, 180, 176, 0.8);
   &__content {
     display: flex;
     flex-direction: row;

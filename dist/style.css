@@ -158,6 +158,28 @@ label {
     transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }
+  body .header .menu__cart {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 42%;
+    right: 25px;
+  }
+  body .header .menu__cart span {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.813rem, 0.648rem + 0.85vw, 1rem);
+    line-height: 30px;
+    text-align: center;
+    color: #8cc63f;
+    background: #2f4f3c;
+  }
   body .header .menu__body {
     position: absolute;
     z-index: 4;
@@ -237,6 +259,10 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 [class*=__container] {
@@ -281,7 +307,9 @@ h4,
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
   max-height: 114px;
   background: #8cc63f;
   box-shadow: 0px 4px 20px rgba(184, 180, 176, 0.8);
@@ -353,6 +381,7 @@ main .banner {
   width: 100%;
   max-height: 1089px;
   position: relative;
+  top: 106px;
 }
 main .banner__bg {
   position: absolute;
@@ -389,7 +418,9 @@ main .banner__content-subtitle {
   color: #2f4f3c;
 }
 main .shop {
+  min-height: 100vh;
   position: relative;
+  top: 106px;
 }
 main .shop-tabs {
   z-index: 2;
@@ -500,7 +531,14 @@ main .shop__main .shop__cards .card__details .counter__quatity {
 main .shop__main .shop__cards .card__details-btn {
   width: 100%;
 }
+main .shop__main .shop__cards .hide {
+  display: none;
+}
 main .shop__main .basket {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 116px;
+  z-index: 2;
   flex: 0 1 10%;
   width: 294px;
   min-height: 150px;
@@ -508,6 +546,7 @@ main .shop__main .basket {
   border-radius: 24px;
   padding: 23px;
   margin-left: 32px;
+  background-color: #ffffff;
   box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
 }
 main .shop__main .basket__title {
@@ -642,8 +681,11 @@ main .shop .bg-img__sixth {
 }
 
 .footer {
+  position: relative;
+  top: 106px;
   margin-top: 90px;
   background: #8cc63f;
+  box-shadow: 0px 4px 20px rgba(184, 180, 176, 0.8);
 }
 .footer__content {
   display: flex;
