@@ -27,7 +27,7 @@
             <span></span>
             <span></span>
           </div>
-          <a href="#" class="menu__cart icon-cart">
+          <a href="#" class="menu__cart icon-cart" id="modal-basket">
             <span>19</span>
           </a>
           <nav class="menu__body">
@@ -42,10 +42,86 @@
                 <a class="menu__item-link" href="#">Доставка</a>
               </li>
               <li class="menu__item">
-                <a class="menu__item-link item-txt" href="#"> Корзина </a>
+                <a class="menu__item-link item-txt" href="#" id="modal-basket"> Корзина </a>
               </li>
             </ul>
           </nav>
+        </div>
+        <div class="modal">
+          <div class="modal__item">
+            <button class="modal__item-close">+</button>
+            <!-- <div class="modal__content">
+              <h3 class="modal__title">Ваш заказ</h3>
+              <div class="modal__empty" >Упс, ваша корзина пуста</div>
+              <div class="modal__content-card card" data-id="01">
+                <div class="card__img-wrapper">
+                  <img  class="card__img-product"src="./img/cards/strawberry.png" alt="">
+                </div>
+                <div class="card__wrapper">
+                  <h4 class="card__titel">Малина замороженная</h4>
+                  <div class="card__price">
+                    <div class="card__price-currency"> 85 грн</div>
+                    <div class="card__price-weight"> за 3 кг</div>
+                  </div>
+                </div>
+                <div class="card__counter counter">
+                  <div class="counter__control" data-action="minus">-</div>
+                  <div class="counter__quatity" data-counter>1</div>
+                  <div class="counter__control" data-action="plus">+</div>
+                </div>
+                <div class="card__subtotal">
+                  <span class="card__subtotal-item"> 0</span>
+                  <span class="uan"> грн</span>
+                </div>
+                <span class="card__delete icon-trash" data-trash></span>
+              </div>
+              <div class="modal__content-card card" data-id="01">
+                <div class="card__img-wrapper">
+                  <img  class="card__img-product"src="./img/cards/strawberry.png" alt="">
+                </div>
+                <div class="card__wrapper">
+                  <h4 class="card__titel">Малина замороженная</h4>
+                  <div class="card__price">
+                    <div class="card__price-currency"> 85 грн</div>
+                    <div class="card__price-weight"> за 3 кг</div>
+                  </div>
+                </div>
+                <div class="card__counter counter">
+                  <div class="counter__control" data-action="minus">-</div>
+                  <div class="counter__quatity" data-counter>1</div>
+                  <div class="counter__control" data-action="plus">+</div>
+                </div>
+                <div class="card__subtotal">
+                  <span class="card__subtotal-item"> 0</span>
+                  <span class="uan"> грн</span>
+                </div>
+                <span class="card__delete icon-trash" data-trash></span>
+              </div>
+              <div class="modal__content-card card" data-id="01">
+                <div class="card__img-wrapper">
+                  <img  class="card__img-product"src="./img/cards/strawberry.png" alt="">
+                </div>
+                <div class="card__wrapper">
+                  <h4 class="card__titel">Малина замороженная</h4>
+                  <div class="card__price">
+                    <div class="card__price-currency"> 85 грн</div>
+                    <div class="card__price-weight"> за 3 кг</div>
+                  </div>
+                </div>
+                <div class="card__counter counter">
+                  <div class="counter__control" data-action="minus">-</div>
+                  <div class="counter__quatity" data-counter>1</div>
+                  <div class="counter__control" data-action="plus">+</div>
+                </div>
+                <div class="card__subtotal">
+                  <span class="card__subtotal-item"> 0</span>
+                  <span class="uan"> грн</span>
+                </div>
+                <span class="card__delete icon-trash" data-trash></span>
+              </div>
+
+            </div> -->
+          </div>
         </div>
       </div>
     </header>
@@ -111,7 +187,11 @@
                     <div class="form-group">
                       <input class="form-control" type="text" placeholder="Ваш номер телефона">
                     </div>
-                    <button class="form-btn btn" type="submit">Заказать</button>
+                    <div class="form-btn">
+                      <button class="form-btn__order btn" type="submit">Заказать</button>
+                      <button class="form-btn__jump-cart " id="modal-basket">Корзина</button>
+                    </div>
+                    
                   </form>
                 </div>
               </div>
@@ -120,22 +200,22 @@
         </div>
         <div class="bg-img">
           <div class="bg-img__first">
-            <img src="./img/cheesecake.png" alt="">
+            <img src="./img/cheesecake.png" alt="cheesecake">
           </div>
           <div class="bg-img__second">
-            <img src="./img/strawberry-yougurt.png" alt="">
+            <img src="./img/strawberry-yougurt.png" alt="strawberry yougurt">
           </div>
           <div class="bg-img__third">
-            <img src="./img/ice-cream-first.png" alt="">
+            <img src="./img/ice-cream-first.png" alt="ice cream">
           </div>
           <div class="bg-img__fourth">
-            <img src="./img/cheesecake-second.png" alt="">
+            <img src="./img/cheesecake-second.png" alt="cheesecake">
           </div>
           <div class="bg-img__fifth">
-            <img src="./img/cheesecake.png" alt="">
+            <img src="./img/cheesecake.png" alt="cheesecake">
           </div>
           <div class="bg-img__sixth">
-            <img src="./img/ice-cream-second.png" alt="">
+            <img src="./img/ice-cream-second.png" alt="ice cream">
           </div>
         </div>
       </section>
@@ -175,6 +255,7 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/modalBasket.js"></script>
     <script src="./js/renderProducts.js"></script>
     <script src="./js/calcBasketPriceAndDelivery.js"></script>
     <script src="./js/toggleBasketStatus.js"></script>
